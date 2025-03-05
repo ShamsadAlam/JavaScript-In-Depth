@@ -1,42 +1,42 @@
-// // Singleton
-// // Object.create() --> In this method singleton Object is created.
+// Singleton
+// Object.create() --> In this method singleton Object is created.
 
-// // Object literals   --> multiple instances of Object is created.
-// const mySym = Symbol("key1");   // creating symbol
+// Object literals   --> multiple instances of Object is created.
+const mySym = Symbol("key1");   // creating symbol
 
-// const JsUser = {
-//     name:"Shamsad",
-//     "Full Name": "Shamsad Alam",
-//     [mySym]:"myKey1",
-//     age:24,
-//     location:"Kushinagar",
-//     email:"noble@gmail.com",
-//     isLoggedIn:false,
-//     lastLoginDays:["Monday","Saturday"]
-// }
+const JsUser = {
+    name:"Shamsad",
+    "Full Name": "Shamsad Alam",
+    [mySym]:"myKey1",
+    age:24,
+    location:"Kushinagar",
+    email:"noble@gmail.com",
+    isLoggedIn:false,
+    lastLoginDays:["Monday","Saturday"]
+}
 
-// console.log(JsUser.email);
-// console.log(JsUser["email"]);
+console.log(JsUser.email);
+console.log(JsUser["email"]);
 
-// // console.log(JsUser."Full Name"); --> Not Allowed
-// console.log(JsUser["Full Name"]);
-// console.log(typeof JsUser[mySym], JsUser[mySym]);
+// console.log(JsUser."Full Name"); --> Not Allowed
+console.log(JsUser["Full Name"]);
+console.log(typeof JsUser[mySym], JsUser[mySym]);
 
-// JsUser.email = "shamsad@google.com";
-// // Object.freeze(JsUser);   // freezes the object
-// JsUser.email = "shamsad@open-ai.com"
-// console.log(JsUser);
+JsUser.email = "shamsad@google.com";
+// Object.freeze(JsUser);   // freezes the object
+JsUser.email = "shamsad@open-ai.com"
+console.log(JsUser);
 
-// JsUser.greeting = function(){
-//     console.log("hello, JS User");
-// }
+JsUser.greeting = function(){
+    console.log("hello, JS User");
+}
 
-// JsUser.greetingTwo = function(){
-//     console.log(`hello, JS User, ${this.name}`);
-// }
+JsUser.greetingTwo = function(){
+    console.log(`hello, JS User, ${this.name}`);
+}
 
-// console.log(JsUser.greeting());
-// console.log(JsUser.greetingTwo());
+console.log(JsUser.greeting());
+console.log(JsUser.greetingTwo());
 
 //   Advanced ---->
 
@@ -59,7 +59,7 @@ const regularUser = {
         }
     }
 }
-// console.log(regularUser.fullName.userFullName)
+console.log(regularUser.fullName.userFullName)
 
 const obj1 = {1:"a", 2:"b"}
 const obj2 = {3:"c",4:"d"}
@@ -87,3 +87,13 @@ const users = [
 ]
 console.log(users[1].email);
 
+const course = {
+    courseName: "JavaScript In Depth",
+    price:"99$",
+    courseInstructor:"ShamsadAlam"
+}
+
+const {courseName, price, courseInstructor:Instructor} = course
+console.log(courseName);
+console.log(price);
+console.log(Instructor);
