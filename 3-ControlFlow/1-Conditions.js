@@ -53,3 +53,16 @@ const emptyObj = {};
 if(Object.keys(emptyObj).length === 0){
     console.log("Object is Empty");
 }
+
+// Nullish Coalescing Operator (??): null undefined
+// It is used for handling exceptions and Errors
+let val1;
+val1 = 5 ??10
+val2 = null ??10
+val3 = undefined ??10
+val4 = null ?? undefined ?? 10
+console.log(`val1: ${val1}, val2: ${val2}, val3: ${val3}, val4: ${val4}`);
+
+// Ternary Operator
+const iceTeaPrice = 100
+iceTeaPrice <= 80 ?console.log("less than 80"): console.log("more than 80");
