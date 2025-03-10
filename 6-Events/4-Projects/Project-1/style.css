@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: rgb(76, 75, 75);
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>a{
+    width: 100px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    border: 1px solid gray;
+}
+
+button{
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+}
