@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: rgb(76, 75, 75);
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>a{
+    width: 100px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    border: 1px solid gray;
+}
+
+table, th, td{
+    border: 1px solid #e7e7e7;
+}
+
+#project{
+    background-color: #1c1c1c;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.color{
+    color:aliceblue;
+    display: flex;
+    flex-direction: row;
+}
